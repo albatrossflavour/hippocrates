@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Source configuration and variables
+. /Users/tgreen/Dropbox/bin/lib/bsfl
+. /Users/tgreen/Dropbox/bin/lib/global-functions
+. /Users/tgreen/Dropbox/bin/lib/global-variables
+
+
+ROUTER='/etc/defaultrouter'
+
+if [ -f "$ROUTER" ]
+then
+	$CAT $ROUTER
+else
+	$ECHO "Can not find $ROUTER"
+	exit 1
+fi

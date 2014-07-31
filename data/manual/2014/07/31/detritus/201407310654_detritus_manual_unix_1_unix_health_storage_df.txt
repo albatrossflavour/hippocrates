@@ -1,0 +1,7 @@
+Filesystem                        1024-blocks      Used Available Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2                        117649480  68000236  49393244    58% 17064057 12348311   58%   /
+devfs                                     203       203         0   100%      706        0  100%   /dev
+map -hosts                                  0         0         0   100%        0        0  100%   /net
+map auto_home                               0         0         0   100%        0        0  100%   /home
+localhost:/6M2I3xH1s3eU88Eao0AKHQ   117649480 117649480         0   100%        0        0  100%   /Volumes/MobileBackups
+/dev/disk1s1                        125680640 120592620   5088020    96% 30148153  1272005   96%   /Volumes/Nifty Drive

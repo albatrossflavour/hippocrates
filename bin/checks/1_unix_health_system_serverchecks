@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Source configuration and variables
+. /Users/tgreen/Dropbox/bin/lib/bsfl
+. /Users/tgreen/Dropbox/bin/lib/global-functions
+. /Users/tgreen/Dropbox/bin/lib/global-variables
+. /Users/tgreen/Dropbox/bin/hippocrates/lib/hippocrates-variables
+. /Users/tgreen/Dropbox/bin/hippocrates/lib/hippocrates-functions
+
+
+
+REPORT="/mblsys/checks/$HOSTNAME.report" 
+
+if [ -f "$REPORT" ] 
+then 
+	$AWK -F: '{if ( $3 == "1" || $3 == "6" || $3 == "3" ){print}}"' $REPORT 
+else 
+	$ECHO "$REPORT file cannot be found" 
+fi 

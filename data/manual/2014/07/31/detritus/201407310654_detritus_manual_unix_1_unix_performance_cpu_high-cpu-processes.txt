@@ -1,0 +1,213 @@
+ %CPU   PID USER            ARGS
+ 80.5 68432 tgreen          /Library/PreferencePanes/Hazel.prefPane/Contents/MacOS/hazelworker 16777218-597418
+ 19.1 62081 tgreen          /Applications/MPlayerX.app/Contents/Resources/binaries/x86_64/mplayer -demuxer lavf -msglevel all=-1:global=4:cplayer=4:identify=4 -msgcharset noconv -noconfig all -slave -noflip-hebrew -nodouble -cache 5000 -prefer-ipv4 -osdlevel 0 -sub-fuzziness 1 -ao coreaudio -vo corevideo:shared_buffer:buffer_name=MPlayerX_1103E0 -slang en,eng,ch,chs,cht,ja,jpn -subpos 100 -subfont-osd-scale 8.0 -subfont-text-scale 8.0 -subfont /Applications/MPlayerX.app/Contents/Resources/wqy-microhei.ttc -subcp UTF-8 -subfont-autoscale 1 -embeddedfonts -overlapsub -lavdopts threads=4 -ass -ass-color FFFFFF00 -ass-font-scale 1.0 -ass-border-color 26 -ass-force-style Default.BorderStyle=1,Default.MarginV=12,Default.Outline=2 -noautosub -volume 24.6 -channels 2 -subid -1 -af scaletempo -nodispclog -font-fblist /System/Library/Fonts/LucidaGrande.ttc,/Library/Fonts/Hiragino Sans GB W3.otf,/Library/Fonts/Arial Unicode.ttf -vf scale -zoom -xy 200 /Volumes/Nifty Drive/Videos/The.Daily.Show.2014.07.29.Sara.Firth.HDTV.x264-LMAO.[VTV].mp4
+  6.4   110 _windowserver   /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Resources/WindowServer -daemon
+  6.0 62043 tgreen          /Applications/MPlayerX.app/Contents/MacOS/MPlayerX
+  5.5   507 tgreen          /Applications/iTerm.app/Contents/MacOS/iTerm -psn_0_45067
+  4.3 68070 tgreen          /bin/sh ./hippocrates.sh -v -p -h
+  3.5 68465 _spotlight      /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+  3.5 68466 _spotlight      /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+  3.4 49370 tgreen          /Applications/1Password 4.app/Contents/MacOS/1Password 4
+  3.2 68467 _spotlight      /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+  1.9  1741 tgreen          tmux -2 -f /usr/local/Cellar/byobu/5.75/share/byobu/profiles/tmuxrc new-session -n - /usr/local/Cellar/byobu/5.75/bin/byobu-shell
+  1.5     1 root            /sbin/launchd
+  1.4 76067 tgreen          /Applications/Transporter Desktop.app/Contents/MacOS/Transporter Desktop
+  1.2   424 tgreen          /sbin/launchd
+  1.2   517 _coreaudiod     /usr/sbin/coreaudiod
+  1.2    14 root            /usr/sbin/notifyd
+  0.9    22 root            /usr/libexec/opendirectoryd
+  0.9    56 root            /System/Library/CoreServices/backupd.bundle/Contents/Resources/mtmfs --tcp --resvport --listen localhost --oneshot --noportmap --nobrowse
+  0.7   434 tgreen          /usr/sbin/cfprefsd agent
+  0.6    24 root            /usr/sbin/cfprefsd daemon
+  0.6   435 _spotlight      /sbin/launchd
+  0.6    58 root            /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Support/mds
+  0.3    16 root            /usr/libexec/diskarbitrationd
+  0.3   776 tgreen          /Applications/Bartender.app/Contents/MacOS/Bartender
+  0.2   520 tgreen          /usr/libexec/xpcd
+  0.1    39 root            /System/Library/CoreServices/coreservicesd
+  0.1   772 tgreen          /Applications/Flux.app/Contents/MacOS/Flux
+  0.1   783 tgreen          /Applications/Keyboard Maestro.app/Contents/Resources/Keyboard Maestro Engine.app/Contents/MacOS/Keyboard Maestro Engine
+  0.1 63621 _spotlight      /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+  0.1    13 root            /usr/libexec/taskgated -s
+  0.1    75 root            /System/Library/CoreServices/launchservicesd
+  0.1   898 tgreen          /Applications/Karabiner.app/Contents/Applications/Karabiner_AXNotifier.app/Contents/MacOS/Karabiner_AXNotifier
+  0.0 23256 tgreen          vi ../../lib/global-variables
+  0.0 18954 _unknown        /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdflagwriter
+  0.0 18952 _unknown        /sbin/launchd
+  0.0 13285 tgreen          /usr/bin/ssh-agent -l
+  0.0  8894 tgreen          com.apple.WebKit.WebContent
+  0.0  7370 tgreen          /System/Library/Frameworks/InputMethodKit.framework/Resources/imklaunchagent
+  0.0  6745 tgreen          vi todo.md
+  0.0  6279 tgreen          /bin/zsh
+  0.0  3582 tgreen          /bin/zsh
+  0.0  1743 tgreen          /bin/zsh
+  0.0  1693 tgreen          tmux -2 -f /usr/local/Cellar/byobu/5.75/share/byobu/profiles/tmuxrc new-session -n - /usr/local/Cellar/byobu/5.75/bin/byobu-shell
+  0.0  1204 tgreen          com.apple.MailServiceAgent
+  0.0  1150 tgreen          com.apple.security.pboxd
+  0.0  1118 root            /usr/libexec/systemstatsd
+  0.0   974 tgreen          com.apple.WebKit.Networking
+  0.0   972 tgreen          /Applications/Safari.app/Contents/MacOS/Safari
+  0.0   953 tgreen          /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdflagwriter
+  0.0   915 tgreen          /Applications/Transporter Desktop.app/Contents/Resources/ConnectedDataRestarter.app/Contents/MacOS/ConnectedDataRestarter -psn_0_381021
+  0.0   880 tgreen          /Library/Image Capture/Support/LegacyDeviceDiscoveryHelpers/CIJScannerRegister.app/Contents/MacOS/CIJScannerRegister
+  0.0   877 tgreen          /System/Library/Image Capture/Support/Image Capture Extension.app/Contents/MacOS/Image Capture Extension
+  0.0   855 tgreen          /Applications/TextExpander.app/Contents/Resources/TextExpander Helper.app/Contents/MacOS/TextExpander Helper -psn_0_307275
+  0.0   854 tgreen          /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+  0.0   834 root            /Library/PrivilegedHelperTools/com.bourgeoisbits.cloak.cloakd
+  0.0   808 tgreen          /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeagent
+  0.0   805 tgreen          com.apple.geod
+  0.0   801 tgreen          /Applications/Karabiner.app/Contents/MacOS/Karabiner
+  0.0   800 tgreen          /Applications/Cloak.app/Contents/MacOS/Cloak
+  0.0   797 tgreen          /Applications/Seil.app/Contents/MacOS/Seil
+  0.0   796 tgreen          /Applications/Memory Clean.app/Contents/MacOS/Memory Clean
+  0.0   794 tgreen          /Applications/BlueHarvest.app/Contents/MacOS/BlueHarvest
+  0.0   793 tgreen          /Applications/ScreenSharingMenulet.app/Contents/MacOS/ScreenSharingMenulet
+  0.0   792 tgreen          /Applications/Growl.app/Contents/MacOS/Growl
+  0.0   791 tgreen          /Applications/Clocks.app/Contents/MacOS/Clocks
+  0.0   790 tgreen          /Library/PreferencePanes/Hazel.prefPane/Contents/MacOS/HazelHelper.app/Contents/MacOS/HazelHelper
+  0.0   786 tgreen          /Applications/LaunchBar.app/Contents/MacOS/LaunchBar
+  0.0   785 tgreen          /Applications/Cobook.app/Contents/MacOS/Cobook
+  0.0   784 tgreen          /Applications/Dropzone 3.app/Contents/MacOS/Dropzone 3
+  0.0   782 tgreen          /Applications/Fantastical.app/Contents/MacOS/Fantastical
+  0.0   781 tgreen          /Applications/TextExpander.app/Contents/MacOS/TextExpander
+  0.0   779 tgreen          /Applications/Moom.app/Contents/MacOS/Moom
+  0.0   777 tgreen          /Applications/PopClip.app/Contents/MacOS/PopClip
+  0.0   775 tgreen          /System/Library/Frameworks/GameKit.framework/Versions/A/Resources/gamed
+  0.0   770 tgreen          /Applications/iTunes.app/Contents/MacOS/iTunesHelper.app/Contents/MacOS/iTunesHelper
+  0.0   767 tgreen          /Users/tgreen/Library/Application Support/Spotify/SpotifyWebHelper
+  0.0   766 tgreen          /Library/Application Support/iStat Menus 4/iStatMenusAgent
+  0.0   755 tgreen          /System/Library/PrivateFrameworks/HelpData.framework/Versions/A/Resources/helpd
+  0.0   750 tgreen          /System/Library/CoreServices/SocialPushAgent.app/Contents/MacOS/SocialPushAgent
+  0.0   748 tgreen          /Library/PreferencePanes/NTFSforMacOSX.prefPane/Contents/MacOS/notificator
+  0.0   743 tgreen          /Applications/Skitch.app/Contents/Library/LoginItems/J8RPQ294UB.com.skitch.SkitchHelper.app/Contents/MacOS/J8RPQ294UB.com.skitch.SkitchHelper
+  0.0   739 tgreen          /Applications/1Password 4.app/Contents/Library/LoginItems/2BUA8C4S2C.com.agilebits.onepassword4-helper.app/Contents/MacOS/2BUA8C4S2C.com.agilebits.onepassword4-helper
+  0.0   652 tgreen          -zsh
+  0.0   651 root            login -fp tgreen
+  0.0   648 root            /System/Library/Frameworks/CoreMediaIO.framework/Resources/VDC.plugin/Contents/Resources/VDCAssistant
+  0.0   645 tgreen          com.apple.InputMethodKit.UserDictionary
+  0.0   644 tgreen          /Applications/Evernote.app/Contents/Library/LoginItems/EvernoteHelper.app/Contents/MacOS/EvernoteHelper
+  0.0   642 tgreen          /System/Library/Services/AppleSpell.service/Contents/MacOS/AppleSpell -psn_0_110619
+  0.0   633 tgreen          /System/Library/CoreServices/pbs
+  0.0   615 tgreen          /System/Library/CoreServices/ScopedBookmarkAgent
+  0.0   605 root            /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd
+  0.0   567 tgreen          /System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd
+  0.0   562 tgreen          /usr/libexec/lsboxd
+  0.0   561 tgreen          /System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent
+  0.0   552 tgreen          /usr/libexec/secd
+  0.0   550 tgreen          /System/Library/PrivateFrameworks/IDSCore.framework/identityservicesd.app/Contents/MacOS/identityservicesd
+  0.0   548 tgreen          com.apple.dock.extra
+  0.0   543 tgreen          com.apple.internetaccounts
+  0.0   542 tgreen          /System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent
+  0.0   537 tgreen          com.apple.IconServicesAgent
+  0.0   536 tgreen          com.apple.ShareKitHelper
+  0.0   534 tgreen          /System/Library/PrivateFrameworks/MessagesKit.framework/Resources/soagent.app/Contents/MacOS/soagent
+  0.0   533 root            /usr/sbin/filecoordinationd
+  0.0   531 tgreen          /System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter
+  0.0   530 tgreen          /usr/sbin/usernoted
+  0.0   529 tgreen          /System/Library/PrivateFrameworks/Ubiquity.framework/Versions/A/Support/ubd
+  0.0   528 tgreen          /usr/libexec/librariand
+  0.0   526 tgreen          /System/Library/PrivateFrameworks/TCC.framework/Resources/tccd
+  0.0   525 tgreen          /usr/libexec/sharingd
+  0.0   523 tgreen          /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd
+  0.0   521 tgreen          /usr/sbin/pboard
+  0.0   515 tgreen          /System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer
+  0.0   514 tgreen          /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock
+  0.0   511 tgreen          /Applications/iThoughtsX.app/Contents/MacOS/iThoughtsX -psn_0_57358
+  0.0   510 tgreen          /Applications/Keynote.app/Contents/MacOS/Keynote -psn_0_53261
+  0.0   509 tgreen          /Applications/Messages.app/Contents/MacOS/Messages -psn_0_49164
+  0.0   506 tgreen          /Applications/OmniFocus.app/Contents/MacOS/OmniFocus -psn_0_40970
+  0.0   505 tgreen          /Applications/Reeder.app/Contents/MacOS/Reeder -psn_0_36873
+  0.0   504 tgreen          /Applications/Evernote.app/Contents/MacOS/Evernote -psn_0_32776
+  0.0   503 tgreen          /Applications/Path Finder.app/Contents/MacOS/Path Finder -psn_0_28679
+  0.0   502 tgreen          /Applications/Airmail.app/Contents/MacOS/Airmail -psn_0_24582
+  0.0   499 tgreen          /usr/libexec/UserEventAgent (Aqua)
+  0.0   447 root            /usr/libexec/securityd_service
+  0.0   446 root            /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdflagwriter
+  0.0   444 root            /sbin/launchd
+  0.0   442 _spotlight      /usr/sbin/distnoted agent
+  0.0   433 tgreen          /usr/sbin/distnoted agent
+  0.0   313 root            /usr/sbin/racoon -D
+  0.0   308 root            /System/Library/PrivateFrameworks/SoftwareUpdate.framework/Resources/suhelperd
+  0.0   306 _softwareupdate /System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdated
+  0.0   284 root            /System/Library/PrivateFrameworks/TCC.framework/Resources/tccd system
+  0.0   259 root            /usr/libexec/gkbisd
+  0.0   252 root            com.apple.CodeSigningHelper
+  0.0   245 root            /usr/libexec/ApplicationFirewall/socketfilterfw
+  0.0   243 root            sysmond
+  0.0   242 root            /usr/libexec/pacemaker -b -e 0.0001 -a 10
+  0.0   241 root            /sbin/SystemStarter
+  0.0   239 root            /usr/sbin/cron
+  0.0   236 root            /usr/sbin/ntpd -c /private/etc/ntp-restrict.conf -n -g -p /var/run/ntpd.pid -f /var/db/ntp.drift
+  0.0   235 root            /usr/libexec/usbd
+  0.0   231 root            /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer
+  0.0   229 root            /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mds_stores
+  0.0   225 root            /usr/libexec/networkd_privileged
+  0.0   219 _networkd       /usr/libexec/networkd
+  0.0   181 root            /usr/sbin/ocspd
+  0.0    90 root            /Library/Application Support/iStat Menus 4/iStatMenusDaemon
+  0.0    88 nobody          /usr/local/bin/fitbitd
+  0.0    87 root            /Applications/Leap Motion.app/Contents/MacOS/leapd
+  0.0    85 root            /usr/libexec/airportd
+  0.0    84 root            /usr/libexec/aosnotifyd
+  0.0    83 root            /System/Library/PrivateFrameworks/ApplePushService.framework/apsd
+  0.0    82 root            autofsd
+  0.0    81 root            /usr/sbin/awacsd
+  0.0    80 root            /System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper -launchd
+  0.0    79 root            /usr/sbin/blued
+  0.0    76 _appleevents    /System/Library/CoreServices/appleeventsd --server
+  0.0    71 root            /sbin/dynamic_pager -F /private/var/vm/swapfile
+  0.0    69 root            /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/Support/fseventsd
+  0.0    68 root            /usr/libexec/hidd
+  0.0    66 root            /System/Library/PrivateFrameworks/Heimdal.framework/Helpers/kdc
+  0.0    65 root            /usr/sbin/KernelEventAgent
+  0.0    64 _locationd      /usr/libexec/locationd
+  0.0 68537 root            /bin/ps -e -r -o pcpu -o pid -o user -o args
+  0.0    62 tgreen          /System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow console
+  0.0    59 _mdnsresponder  /usr/sbin/mDNSResponder
+  0.0    57 root            /System/Library/CoreServices/backupd.bundle/Contents/Resources/mtmd
+  0.0    51 root            /System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/Support/revisiond
+  0.0    49 root            /System/Library/CoreServices/SleepServicesD
+  0.0    46 root            /usr/libexec/stackshot -t
+  0.0    43 _usbmuxd        /System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/usbmuxd -launchd
+  0.0    42 root            /usr/libexec/warmd
+  0.0    38 root            com.apple.authd
+  0.0    25 root            /usr/libexec/xpcd
+  0.0    21 root            /usr/sbin/distnoted daemon
+  0.0    19 root            /usr/sbin/syslogd
+  0.0    18 root            /usr/libexec/configd
+  0.0    17 root            /System/Library/CoreServices/powerd.bundle/powerd
+  0.0    15 root            /usr/sbin/securityd -i
+  0.0    12 root            /usr/libexec/kextd
+  0.0    11 root            /usr/libexec/UserEventAgent (System)
+  0.0    63 root            /System/Library/CoreServices/logind
+  0.0 68524 tgreen          /bin/sh /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_cpu_high-cpu-processes /Users/tgreen/Dropbox/bin/hippocrates/data/manual/2014/07/31/detritus/201407310654_detritus_manual_unix_1_unix_performance_cpu_high-cpu-processes
+  0.0 67901 root            /Library/PrivilegedHelperTools/com.connecteddata.CDHelperApp
+  0.0 65692 tgreen          /System/Library/CoreServices/System Events.app/Contents/MacOS/System Events
+  0.0 64993 tgreen          /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+  0.0 64133 tgreen          /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMCompiler 3
+  0.0 62128 tgreen          com.apple.coremedia.videodecoder
+  0.0 62098 tgreen          com.apple.audio.ComponentHelper
+  0.0 62083 tgreen          com.apple.audio.SandboxHelper
+  0.0 62082 tgreen          /Applications/MPlayerX.app/Contents/Resources/binaries/x86_64/mplayer -demuxer lavf -msglevel all=-1:global=4:cplayer=4:identify=4 -msgcharset noconv -noconfig all -slave -noflip-hebrew -nodouble -cache 5000 -prefer-ipv4 -osdlevel 0 -sub-fuzziness 1 -ao coreaudio -vo corevideo:shared_buffer:buffer_name=MPlayerX_1103E0 -slang en,eng,ch,chs,cht,ja,jpn -subpos 100 -subfont-osd-scale 8.0 -subfont-text-scale 8.0 -subfont /Applications/MPlayerX.app/Contents/Resources/wqy-microhei.ttc -subcp UTF-8 -subfont-autoscale 1 -embeddedfonts -overlapsub -lavdopts threads=4 -ass -ass-color FFFFFF00 -ass-font-scale 1.0 -ass-border-color 26 -ass-force-style Default.BorderStyle=1,Default.MarginV=12,Default.Outline=2 -noautosub -volume 24.6 -channels 2 -subid -1 -af scaletempo -nodispclog -font-fblist /System/Library/Fonts/LucidaGrande.ttc,/Library/Fonts/Hiragino Sans GB W3.otf,/Library/Fonts/Arial Unicode.ttf -vf scale -zoom -xy 200 /Volumes/Nifty Drive/Videos/The.Daily.Show.2014.07.29.Sara.Firth.HDTV.x264-LMAO.[VTV].mp4
+  0.0 62065 tgreen          com.apple.quicklook.satellite
+  0.0 62042 tgreen          /System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/quicklookd
+  0.0 61616 tgreen          /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMCompiler 2
+  0.0 61615 _netbios        /usr/sbin/netbiosd
+  0.0 59414 tgreen          com.apple.iCloudHelper
+  0.0 54985 tgreen          /System/Library/Frameworks/CFNetwork.framework/Versions/A/Support/cookied
+  0.0 58255 tgreen          /usr/libexec/WiFiKeychainProxy
+  0.0 53499 tgreen          /usr/libexec/spindump_agent
+  0.0 48731 tgreen          com.apple.ColorSyncXPCAgent
+  0.0 48304 tgreen          com.apple.BKAgentService
+  0.0 48260 root            /usr/libexec/syspolicyd
+  0.0 48258 tgreen          /Applications/Preview.app/Contents/MacOS/Preview -psn_0_3289891
+  0.0 11933 tgreen          com.apple.hiservices-xpcservice
+  0.0 66073 tgreen          /System/Library/PrivateFrameworks/KerberosHelper/Helpers/DiskUnmountWatcher
+  0.0 34108 tgreen          /bin/zsh
+  0.0 77217 tgreen          /usr/libexec/USBAgent
+  0.0 57309 _spotlight      /usr/libexec/xpcd
+  0.0 29611 tgreen          com.apple.WebKit.WebContent
+  0.0 71772 root            /System/Library/Filesystems/AppleShare/check_afp.app/Contents/MacOS/check_afp
+  0.0 71672 tgreen          /System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent --launchd
+  0.0 55097 tgreen          /System/Library/PrivateFrameworks/CloudServices.framework/Resources/EscrowSecurityAlert.app/Contents/MacOS/EscrowSecurityAlert
+  0.0 33018 tgreen          vi 1_unix_health_network_arp

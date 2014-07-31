@@ -1,0 +1,15 @@
+cpio: /private/etc/aliases.db: could not open file: Permission denied
+cpio: /private/etc/cups/printers.conf: could not open file: Permission denied
+cpio: /private/etc/cups/printers.conf.O: could not open file: Permission denied
+cpio: /private/etc/krb5.keytab: could not open file: Permission denied
+cpio: /private/etc/master.passwd: could not open file: Permission denied
+cpio: /private/etc/openldap/DB_CONFIG.example: could not open file: Permission denied
+cpio: /private/etc/openldap/slapd.conf.default: could not open file: Permission denied
+cpio: /private/etc/racoon/psk.txt: could not open file: Permission denied
+cpio: /private/etc/security/audit_control: could not open file: Permission denied
+cpio: /private/etc/security/audit_user: could not open file: Permission denied
+cpio: /private/etc/ssh_host_dsa_key: could not open file: Permission denied
+cpio: /private/etc/ssh_host_key: could not open file: Permission denied
+cpio: /private/etc/ssh_host_rsa_key: could not open file: Permission denied
+cpio: /private/etc/sudoers: could not open file: Permission denied
+8442 blocks

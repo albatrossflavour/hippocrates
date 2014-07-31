@@ -1,0 +1,144 @@
+Jul 31 06:54:58 Starting run
+Jul 31 06:54:58 Status =   DEBUG  
+Jul 31 06:54:58 Checking for /Users/tgreen/Dropbox/bin/hippocrates/lockfile
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:54:59 /Users/tgreen/Dropbox/bin/hippocrates/lockfile created
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:54:59 Ensure data directory structure is there
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:54:59 Ticket not defined, using mode : manual
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:54:59 Checking for /Users/tgreen/Dropbox/bin/hippocrates/data/manual/2014/07/31/detritus
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:54:59 Basefile : /Users/tgreen/Dropbox/bin/hippocrates/data/manual/2014/07/31/detritus/201407310654_detritus_manual_unix
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:54:59 Checking which scripts we should run
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:54:59 Begining checks
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:54:59 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_darwin_performance_cpu_sys
+Jul 31 06:54:59 Status =   DEBUG  
+Jul 31 06:55:00 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_darwin_performance_cpu_usr
+Jul 31 06:55:00 Status =   DEBUG  
+Jul 31 06:55:01 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_darwin_performance_memory_summary
+Jul 31 06:55:01 Status =   DEBUG  
+Jul 31 06:55:01 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_cpu_high-cpu-processes
+Jul 31 06:55:01 Status =   DEBUG  
+Jul 31 06:55:01 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_cpu_load
+Jul 31 06:55:01 Status =   DEBUG  
+Jul 31 06:55:01 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_netstat-a
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_netstat-rn
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_storage_iostat
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_system_sar
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Issues running /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_system_sar
+Jul 31 06:55:02 Status =  WARNING 
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_system_top
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_darwin_health_network
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_network_arp
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_network_ifconfig
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_storage_df
+Jul 31 06:55:02 Status =   DEBUG  
+Jul 31 06:55:02 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_boottime
+Jul 31 06:55:03 Status =   DEBUG  
+Jul 31 06:55:03 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_etc
+Jul 31 06:55:03 Status =   DEBUG  
+Jul 31 06:55:04 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_hosts
+Jul 31 06:55:04 Status =   DEBUG  
+Jul 31 06:55:05 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_ipcs
+Jul 31 06:55:05 Status =   DEBUG  
+Jul 31 06:55:05 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_patrol
+Jul 31 06:55:05 Status =   DEBUG  
+Jul 31 06:55:05 Issues running /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_patrol
+Jul 31 06:55:05 Status =  WARNING 
+Jul 31 06:55:05 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_processes
+Jul 31 06:55:05 Status =   DEBUG  
+Jul 31 06:55:05 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_serverchecks
+Jul 31 06:55:05 Status =   DEBUG  
+Jul 31 06:55:06 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_w
+Jul 31 06:55:06 Status =   DEBUG  
+Jul 31 06:55:06 Completed checks
+Jul 31 06:55:06 Status =   DEBUG  
+Jul 31 06:55:06 Removing /Users/tgreen/Dropbox/bin/hippocrates/lockfile
+Jul 31 06:55:06 Status =   DEBUG  
+Jul 31 06:55:06 Finished run
+Jul 31 06:55:06 Status =   DEBUG  
+Jul 31 06:58:40 Starting run
+Jul 31 06:58:40 Status =   DEBUG  
+Jul 31 06:58:40 Checking for /Users/tgreen/Dropbox/bin/hippocrates/lockfile
+Jul 31 06:58:40 Status =   DEBUG  
+Jul 31 06:58:40 /Users/tgreen/Dropbox/bin/hippocrates/lockfile created
+Jul 31 06:58:40 Status =   DEBUG  
+Jul 31 06:58:40 Ensure data directory structure is there
+Jul 31 06:58:41 Status =   DEBUG  
+Jul 31 06:58:41 Ticket not defined, using mode : manual
+Jul 31 06:58:41 Status =   DEBUG  
+Jul 31 06:58:41 Checking for /Users/tgreen/Dropbox/bin/hippocrates/data/manual/2014/07/31/detritus
+Jul 31 06:58:41 Status =   DEBUG  
+Jul 31 06:58:41 Basefile : /Users/tgreen/Dropbox/bin/hippocrates/data/manual/2014/07/31/detritus/201407310658_detritus_manual_unix
+Jul 31 06:58:41 Status =   DEBUG  
+Jul 31 06:58:41 Checking which scripts we should run
+Jul 31 06:58:41 Status =   DEBUG  
+Jul 31 06:58:41 Begining checks
+Jul 31 06:58:41 Status =   DEBUG  
+Jul 31 06:58:41 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_darwin_performance_cpu_sys
+Jul 31 06:58:41 Status =   DEBUG  
+Jul 31 06:58:42 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_darwin_performance_cpu_usr
+Jul 31 06:58:42 Status =   DEBUG  
+Jul 31 06:58:43 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_darwin_performance_memory_summary
+Jul 31 06:58:43 Status =   DEBUG  
+Jul 31 06:58:43 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_cpu_high-cpu-processes
+Jul 31 06:58:43 Status =   DEBUG  
+Jul 31 06:58:43 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_cpu_load
+Jul 31 06:58:43 Status =   DEBUG  
+Jul 31 06:58:43 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_netstat-a
+Jul 31 06:58:43 Status =   DEBUG  
+Jul 31 06:58:43 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_netstat-rn
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:44 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_storage_iostat
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:44 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_system_sar
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:44 Issues running /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_system_sar
+Jul 31 06:58:44 Status =  WARNING 
+Jul 31 06:58:44 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_performance_system_top
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:44 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_darwin_health_network
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:44 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_network_arp
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:44 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_network_ifconfig
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:44 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_storage_df
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:44 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_boottime
+Jul 31 06:58:44 Status =   DEBUG  
+Jul 31 06:58:45 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_etc
+Jul 31 06:58:45 Status =   DEBUG  
+Jul 31 06:58:45 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_hosts
+Jul 31 06:58:45 Status =   DEBUG  
+Jul 31 06:58:46 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_ipcs
+Jul 31 06:58:46 Status =   DEBUG  
+Jul 31 06:58:46 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_patrol
+Jul 31 06:58:46 Status =   DEBUG  
+Jul 31 06:58:46 Issues running /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_patrol
+Jul 31 06:58:46 Status =  WARNING 
+Jul 31 06:58:46 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_processes
+Jul 31 06:58:46 Status =   DEBUG  
+Jul 31 06:58:47 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_serverchecks
+Jul 31 06:58:47 Status =   DEBUG  
+Jul 31 06:58:47 Performing check : /Users/tgreen/Dropbox/bin/hippocrates/bin/checks/1_unix_health_system_w
+Jul 31 06:58:47 Status =   DEBUG  
+Jul 31 06:58:47 Completed checks
+Jul 31 06:58:47 Status =   DEBUG  
+Jul 31 06:58:47 Removing /Users/tgreen/Dropbox/bin/hippocrates/lockfile
+Jul 31 06:58:47 Status =   DEBUG  
+Jul 31 06:58:47 Finished run
+Jul 31 06:58:47 Status =   DEBUG  

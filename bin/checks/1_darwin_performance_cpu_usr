@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Source configuration and variables
+. /Users/tgreen/Dropbox/bin/lib/bsfl
+. /Users/tgreen/Dropbox/bin/lib/global-functions
+. /Users/tgreen/Dropbox/bin/lib/global-variables
+
+
+if [ -x "$IOSTAT" ]
+then
+	$IOSTAT 1 2 | $TAIL -1 | $AWK '{print $7}'
+else
+	$ECHO "Count not find $IOSTAT"
+	exit 1
+fi

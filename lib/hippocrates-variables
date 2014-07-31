@@ -1,0 +1,17 @@
+# Hippocrates variables 
+TEAM=unix 		# unix 		: windows 	: dba 
+QUERY=""	 	# health 	: perf 		: compliance 
+MODE=manual 	# manual 	: triggered : scheduled 
+LEVEL=1
+USAGE="Usage: $0 -v -q [1-3] -m [manual|triggered|scheduled] -q [health|performance|compliance]"
+DEBUG=0
+BASEDIR='/Users/tgreen/Dropbox/bin/hippocrates' 
+LOGDIR="$BASEDIR/logs"
+LOG_FILE="$LOGDIR/hippocrates.`date '+%Y%m%d'`"
+LOCKFILE="${BASEDIR}/lockfile"
+BIN_DIR="$BASEDIR/bin"
+CHECK_DIR="$BIN_DIR/checks"
+INTERVAL="5" 
+COUNT="5" 
+TRIGGERED_INTERVAL=600 # Seconds 
+TRIGGERED_DURATION=12 # Hours 

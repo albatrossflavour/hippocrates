@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Source configuration and variables
+. /Users/tgreen/Dropbox/bin/lib/bsfl
+. /Users/tgreen/Dropbox/bin/lib/global-functions
+. /Users/tgreen/Dropbox/bin/lib/global-variables
+
+
+
+# Change into the patrol directory
+PATROLDIR='/opt/bmc/Patrol3'
+
+if [ ! -d "$PATROLDIR" ]
+then
+	echo "Cannot find $PATROLDIR"
+	exit 1
+fi
+
+cd $PATROLDIR
+
+# Source the patrol config variables
+../patrolrc.sh
+
+# Run a pconfig to grab the configuration
+pconfig +get -host $HOSTNAME 

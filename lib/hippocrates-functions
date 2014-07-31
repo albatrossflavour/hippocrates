@@ -1,0 +1,32 @@
+#!/bin/sh
+
+function data_directory ()
+{
+	INPUT=$1
+	case $INPUT in
+		INC*|TSK*|PBI*|CHG*)
+			TICKET=$INPUT
+			TICKET_TYPE=`$ECHO $TICKET | $CUT -c1-3`
+			DATA_BASEDIR=`$ECHO $TICKET | $CUT -c1-6` 
+			DATADIR="$BASEDIR/data/$TICKET_TYPE/$DATA_BASEDIR/$TICKET/$HOSTNAME" 
+		;;
+		manual)
+			DATADIR="$BASEDIR/data/manual/`year`/`month`/`day`/$HOSTNAME"
+		;;
+		triggered)
+			DATADIR="$BASEDIR/data/triggered/`year`/`month`/`day`/$HOSTNAME"
+		;;
+		scheduled)
+			DATADIR="$BASEDIR/data/scheduled/`year`/`month`/`day`/$HOSTNAME"
+		;;
+	esac
+	FILE_PREFIX="`dts`_${HOSTNAME}_${INPUT}_${TEAM}" 
+	msg_debug "Checking for $DATADIR"
+	if [ ! -d "$DATADIR" ]
+	then 
+		$MKDIR -p $DATADIR || die 1 "Can't create $DATADIR"
+	fi
+	BASEFILE="${DATADIR}/${FILE_PREFIX}" 
+	msg_debug "Basefile : $BASEFILE"
+}
+

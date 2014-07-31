@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Source configuration and variables
+. /Users/tgreen/Dropbox/bin/lib/bsfl
+. /Users/tgreen/Dropbox/bin/lib/global-functions
+. /Users/tgreen/Dropbox/bin/lib/global-variables
+
+if [ -f "/etc/system" ]
+then
+	$CAT /etc/system
+else
+	$ECHO "Can not find /etc/system"
+	exit 1
+fi

@@ -1,0 +1,4 @@
+ 6:55  up 10:36, 2 users, load averages: 2.07 2.75 2.64
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+tgreen   console  -                Wed20   10:33 -
+tgreen   s000     -                Wed20       - tmux -2 -f /usr/local/Cellar/byobu/5.75/share/byobu/prof

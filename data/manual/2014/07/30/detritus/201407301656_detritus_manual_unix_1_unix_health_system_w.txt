@@ -1,0 +1,4 @@
+16:56  up 3 days,  7:08, 2 users, load averages: 1.76 1.71 1.75
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+tgreen   console  -                Sun09   3days -
+tgreen   s000     -                Tue20       - tmux -2 -f /usr/local/Cellar/byobu/5.75/share/byobu/profiles/tmuxrc new-session -n - /usr/local/Cellar/byobu

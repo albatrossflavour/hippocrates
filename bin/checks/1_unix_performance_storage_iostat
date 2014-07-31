@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Source configuration and variables
+. /Users/tgreen/Dropbox/bin/lib/bsfl
+. /Users/tgreen/Dropbox/bin/lib/global-functions
+. /Users/tgreen/Dropbox/bin/lib/global-variables
+
+if [ -x "$IOSTAT" ]
+then
+	#$IOSTAT -xn $INTERVAL $COUNT &
+	$IOSTAT $INTERVAL $COUNT &
+else
+	$ECHO "Can not find $IOSTAT"
+	exit 1
+fi

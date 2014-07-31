@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Source configuration and variables
+. /Users/tgreen/Dropbox/bin/lib/bsfl
+. /Users/tgreen/Dropbox/bin/lib/global-functions
+. /Users/tgreen/Dropbox/bin/lib/global-variables
+
+COUNT=`$LS -l /var/log/sa | $WC -l`
+COUNT=`$EXPR $COUNT + 0`
+
+if [ "$COUNT" -gt 1 -a -x "$SAR" ]
+then
+	$SAR -A
+else
+	$ECHO "Can not run $SAR"
+	exit 1
+fi 

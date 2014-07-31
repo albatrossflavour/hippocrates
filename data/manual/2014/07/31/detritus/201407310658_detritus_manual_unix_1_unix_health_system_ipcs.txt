@@ -1,0 +1,11 @@
+IPC status from <running system> as of Thu Jul 31 06:58:46 EST 2014
+T     ID     KEY        MODE       OWNER    GROUP  CREATOR   CGROUP CBYTES  QNUM QBYTES LSPID LRPID   STIME    RTIME    CTIME
+Message Queues:
+
+T     ID     KEY        MODE       OWNER    GROUP  CREATOR   CGROUP NATTCH  SEGSZ  CPID  LPID   ATIME    DTIME    CTIME
+Shared Memory:
+
+T     ID     KEY        MODE       OWNER    GROUP  CREATOR   CGROUP NSEMS   OTIME    CTIME
+Semaphores:
+s  65536 0x0bfb5a94 --ra-ra-ra-   tgreen    staff   tgreen    staff      1 22:04:14 21:41:04
+
