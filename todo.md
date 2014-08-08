@@ -1,11 +1,11 @@
 # Doing
+* chkconfig
 
 # To Do 
 ## New checks to write
 * Puppet 
 * dmidecode
 * Mail (queue, spooled, configuration)
-* chkconfig
 * Storage - replication, show_disks, emcgrab
 * Filesystems - inodes, size, large directories? 
 * Detailed CPU state - WIO/USR/SYS 
