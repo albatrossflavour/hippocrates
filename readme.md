@@ -1,5 +1,7 @@
-# hippocrates
+hippocrates
+===========
 
-A framework to run health/performance/compliance snapshots across a UNIX server.  
+Hippocrates is a framework for carrying out health, performance and compliance checks on a host.
 
-It is not a monitoring system, but should be used in conjunction with one.
+
+
