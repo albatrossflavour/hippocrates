@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Source configuration and variables
-. /Users/tgreen/Dropbox/bin/lib/bsfl
-. /Users/tgreen/Dropbox/bin/lib/global-functions
-. /Users/tgreen/Dropbox/bin/lib/global-variables
+. ../../lib/bsfl
+. ../../lib/global-functions
+. ../../lib/global-variables
 
 $CAT /proc/cpuinfo

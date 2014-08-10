@@ -1,0 +1,50 @@
+#!/bin/sh
+
+function dts () 	
+{
+	/bin/date '+%Y%m%d%H%M' 
+}
+
+function time () 	
+{
+	/bin/date '+%H%M' 
+}
+
+function day () 	
+{
+	/bin/date '+%d' 
+}
+
+function month () 	
+{
+	/bin/date '+%m' 
+}
+
+function year () 	
+{
+	/bin/date '+%Y' 
+}
+
+
+function lockfile ()
+{
+	msg_debug "Checking for $LOCKFILE"
+	if [ -e $LOCKFILE ]
+	then
+		PID=`$CAT $LOCKFILE`
+		if kill -0 &>1 > /dev/null $PID
+		then
+	    	die 1 "$LOCKFILE already exists, exiting"
+		else
+			$RM $LOCKFILE || die 1 "Cannot remove $LOCKFILE"
+			$ECHO "Removed stale lockfile : $LOCKFILE"
+		fi
+	fi
+	$ECHO $$ > $LOCKFILE || die 1 "Couldn't write to $LOCKFILE"
+	msg_debug "$LOCKFILE created"
+}
+
+human_readable() 
+{ 
+	$AWK -v sum="$1" ' BEGIN {hum[1024^3]="Gb"; hum[1024^2]="Mb"; hum[1024]="Kb"; for (x=1024^3; x>=1024; x/=1024) { if (sum>=x) { printf "%.2f %s\n",sum/x,hum[x]; break; } } if (sum<1024) print "1kb"; } '
+}

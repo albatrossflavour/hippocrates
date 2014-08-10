@@ -1,9 +1,8 @@
-#!/bin/sh
-
 # Source configuration and variables
 . ../../lib/bsfl
 . ../../lib/global-functions
 . ../../lib/global-variables
+. ../../lib/hippocrates-variables
+. ../../lib/hippocrates-functions
 
 
-$PS -e -r -o pcpu -o pid -o user -o args

@@ -1,0 +1,218 @@
+#!/bin/sh
+
+OS=`uname -s`
+OSTYPE=`uname -s`
+OSVER=`uname -r`
+MTYPE=`uname -p`
+BASEDIR="/mblsys/checks"
+CMD=`basename $0`
+CLUSTDIR=/mblsys/cluster
+
+
+# Am I running Volume Manager?
+if [ -x /opt/VRTS/bin/vxprint ]
+then
+	# Yes
+    VVM=0
+else
+	# No
+    VVM=1
+fi
+
+# Am I a VCS Cluster?
+if [ -x /opt/VRTSvcs/bin/hagrp ]
+then
+	# Yes
+    VCS=0
+else
+	# No
+    VCS=1
+fi
+
+
+# Puppet
+if [ -x /opt/puppet/bin/puppet ]; then
+  PUPPET=/opt/puppet/bin/puppet
+elif [ -x /usr/local/bin/puppet ]; then
+  PUPPET=/usr/local/bin/puppet
+else
+  PUPPET=
+fi
+PUPPETCONF=/etc/puppetlabs/puppet/puppet.conf
+
+
+# Command variables
+case $OS in
+	Darwin)
+		HOSTNAME=`/bin/hostname -s`
+		MEMPRES='/usr/bin/memory_pressure'
+		ECHO='/bin/echo'
+		IPCS='/usr/bin/ipcs'
+		ETC='/private/etc'
+		TOP='/usr/bin/top'
+		PS='/bin/ps' 
+		FIND='/usr/bin/find'
+		CPIO='/usr/bin/cpio'
+		SAR='/usr/sbin/sar' 
+		IFCONFIG='/sbin/ifconfig' 
+		DF='/bin/df' 
+		IOSTAT='/usr/sbin/iostat' 
+		CAT='/bin/cat'
+		W='/usr/bin/w' 
+		WHO='/usr/bin/who' 
+		UPTIME='/usr/bin/uptime' 
+		NETSTAT='/usr/sbin/netstat' 
+		MOUNT='/usr/sbin/mount' 
+		AWK='/usr/bin/awk' 
+		CUT='/usr/bin/cut'
+		EXPR='/bin/expr'
+		ARP='/usr/sbin/arp'
+		WC='/usr/bin/wc'
+		MKDIR='/bin/mkdir'
+		LS='/bin/ls'
+		RM='/bin/rm'
+		TAIL='/usr/bin/tail'
+		DIRNAME='/usr/bin/dirname'
+		BASENAME='/usr/bin/basename'
+	;;
+    solaris)
+		HOSTNAME=`/usr/bin/uname -n`
+		PLATFORM=`/bin/uname -i`
+        DF="/bin/df"
+		IPCS='/usr/bin/ipcs'
+		ETC='/etc'
+        TMP="/tmp"
+        EGREP='/usr/bin/egrep'
+        PGREP='/usr/bin/pgrep'
+        GREP='/usr/bin/grep'
+        CUT='/usr/bin/cut'
+        AWK='/usr/bin/awk'
+        UNIQ='/usr/bin/uniq'
+        TR='/usr/bin/tr'
+        LS='/usr/bin/ls'
+        PS='/usr/bin/ps'
+        SORT='/usr/bin/sort'
+		ARP='/usr/sbin/arp'
+        HEAD='/usr/bin/head'
+        SED='/usr/bin/sed'
+        CP='/usr/bin/cp'
+        MV='/usr/bin/mv'
+        TAIL='/usr/bin/tail'
+        WC='/usr/bin/wc'
+        RM='/usr/bin/rm'
+        CAT='/usr/bin/cat'
+        PING='/usr/sbin/ping'
+        MOUNT='/usr/sbin/mount'
+        DIFF='/usr/bin/diff'
+        IFCONFIG='/sbin/ifconfig'
+        EEPROM='/usr/sbin/eeprom'
+        UNAMEI=`/usr/bin/uname -i`
+        UNAMEM=`/usr/bin/uname -m`
+        NFSSTAT="/usr/bin/nfsstat -m"
+        ECHO='/usr/bin/echo'
+        HOST=`/usr/bin/hostname`
+		TMPDIR='/var/tmp'
+		TMPFILE="$TMPDIR/$CMD.$$"
+		PERL='/usr/bin/perl'
+		PRTCONF='/usr/sbin/prtconf'
+        PRTDIAG='/usr/platform/$UNAMEM/sbin/prtdiag'
+        if [ ! -x "${PRTDIAG}" ]; then
+          PRTDIAG='/usr/platform/sun4u/sbin/prtdiag'
+          if [ ! -x "${PRTDIAG}" ]; then
+            PRTDIAG='/usr/sbin/prtdiag'
+          fi
+        fi
+        PSRINFO='/usr/sbin/psrinfo'
+		NETSTAT='/usr/bin/netstat'
+    ;;
+    linux)
+		FREE='/usr/bin/free'
+		HOSTNAME=`/bin/hostname -s`
+		PLATFORM=`/bin/uname -i`
+		ETC='/etc'
+        DF="/bin/df -k"
+		SYSCTL="/sbin/sysctl"
+        TMP="/tmp"
+        EGREP='/bin/egrep'
+		IPCS='/usr/bin/ipcs'
+        PGREP='/usr/bin/pgrep'
+        GREP='/bin/grep'
+        AWK='/bin/awk'
+        UNIQ='/usr/bin/uniq'
+        CUT='/usr/bin/cut'
+        TR='/usr/bin/tr'
+        SERVICE='/sbin/service'
+        CHKCONF='/sbin/chkconfig'
+        LS='/bin/ls'
+        PS='/bin/ps'
+        SORT='/bin/sort'
+        HEAD='/usr/bin/head'
+        SED='/bin/sed'
+        CP='/bin/cp'
+        MV='/bin/mv'
+        TAIL='/usr/bin/tail'
+        SORT='/bin/sort'
+        WC='/usr/bin/wc'
+        RM='/bin/rm'
+        CAT='/bin/cat'
+        MOUNT='/bin/mount'
+        PING='/sbin/ping'
+		ARP='/usr/sbin/arp'
+        DIFF='/usr/bin/diff'
+        NFSSTAT="/usr/sbin/nfsstat -m"
+        IFCONFIG='/sbin/ifconfig'
+        ECHO='/bin/echo'
+        HOST=`/bin/hostname`
+		TMPDIR='/var/tmp'
+		TMPFILE="$TMPDIR/$CMD.$$"
+		PERL='/usr/bin/perl'
+        DMI='/usr/sbin/dmidecode'
+        VGDISPLAY='/usr/sbin/vgdisplay'
+        if [ ! -x "${VGDISPLAY}" ]; then
+          VGDISPLAY='/sbin/vgdisplay'
+        fi
+		NETSTAT='/bin/netstat'
+    ;;
+    AIX)
+        DF="/bin/df -k"
+		IPCS='/usr/bin/ipcs'
+        TMP="/tmp"
+        EGREP='/usr/bin/egrep'
+        PGREP='/usr/bin/pgrep'
+        GREP='/usr/bin/grep'
+        AWK='/usr/bin/awk'
+        UNIQ='/usr/bin/uniq'
+        CUT='/usr/bin/cut'
+        TR='/usr/bin/tr'
+        LS='/usr/bin/ls'
+        PS='/usr/bin/ps'
+        SORT='/usr/bin/sort'
+        HEAD='/usr/bin/head'
+        SED='/usr/bin/sed'
+        CP='/usr/bin/cp'
+        MV='/usr/bin/mv'
+        TAIL='/usr/bin/tail'
+        HEAD='/usr/bin/head'
+        SORT='/usr/bin/sort'
+        WC='/usr/bin/wc'
+        RM='/usr/bin/rm'
+        CAT='/usr/bin/cat'
+        PING='/usr/sbin/ping'
+        MOUNT='/usr/sbin/mount'
+        DIFF='/usr/bin/diff'
+        IFCONFIG='/usr/sbin/ifconfig'
+        UNAMEM=`/usr/bin/uname -m`
+        ECHO='/usr/bin/echo'
+        HOST=`/usr/bin/hostname`
+		TMPDIR='/tmp'
+		TMPFILE="$TMPDIR/$CMD.$$"
+		PRTCONF='/usr/sbin/prtconf'
+		PERL='/usr/bin/perl'
+		NETSTAT='/usr/bin/netstat'
+		LSATTR='/usr/sbin/lsattr'
+	;;
+    *)
+        # Unsupported OS
+        exit 1
+    ;;
+esac
