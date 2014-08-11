@@ -57,8 +57,13 @@ else
 fi
 
 msg_debug "Checking which scripts we should run"
+if [ -z "$QUERY" ]
+then
+	msg_debug "No command line query level flags set, defaulting to 'health'"
+	QUERY="health"
+fi
 
-if [ -z "$QUERY" ]; then QUERY="health"; fi
+
 for TYPE in $QUERY
 do
 	CHECKS="$CHECKS `$LS -1 $CHECK_DIR/[1-${LEVEL}]_unix_${TYPE}* $CHECK_DIR/[1-${LEVEL}]_${OS}_${TYPE}* 2>/dev/null`"
